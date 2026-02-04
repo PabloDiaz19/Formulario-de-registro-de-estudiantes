@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro de Estudiantes</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulario de Registro de Estudiantes</h1>
+        
+        <form id="formularioRegistro" method="POST" action="">
+            
+            <div class="form-group">
+                <label for="cedula">Cédula:</label>
+                <input type="text" id="cedula" name="cedula" placeholder="Ej: 12345678-9" required>
+            </div>
+
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
+            </div>
+
+            <div class="form-group">
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido" required>
+            </div>
+
+            <div class="form-group">
+                <label for="sexo">Sexo:</label>
+                <select id="sexo" name="sexo" required>
+                    <option value="">-- Seleccione --</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="carrera">Carrera:</label>
+                <select id="carrera" name="carrera" required>
+                    <option value="">-- Seleccione una carrera --</option>
+                    <option value="ingenieria_sistemas">Ingeniería en Sistemas</option>
+                    <option value="ingenieria_industrial">Ingeniería Industrial</option>
+                    <option value="administracion">Administración</option>
+                    <option value="contabilidad">Contabilidad</option>
+                    <option value="derecho">Derecho</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="matricula">Matrícula:</label>
+                <input type="text" id="matricula" name="matricula" placeholder="Ingrese número de matrícula" required>
+            </div>
+
+            <div class="form-group">
+                <label for="direccion">Dirección:</label>
+                <textarea id="direccion" name="direccion" rows="3" placeholder="Ingrese su dirección completa" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Ej: +58-212-1234567" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Ej: estudiante@correo.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="ciudad">Ciudad:</label>
+                <input type="text" id="ciudad" name="ciudad" placeholder="Ingrese su ciudad" required>
+            </div>
+
+            <div class="form-group">
+                <label for="provincia">Provincia:</label>
+                <select id="provincia" name="provincia" required>
+                    <option value="">-- Seleccione una provincia --</option>
+                    <option value="mao">Mao</option>
+                    <option value="santiago">Santiago</option>
+                    <option value="capital">La Capital</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+                <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+            </div>
+
+            <div class="form-group">
+                <label for="comentario">Comentario:</label>
+                <textarea id="comentario" name="comentario" rows="4" placeholder="Ingrese comentarios adicionales (opcional)"></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn-submit">Registrar</button>
+                <button type="reset" class="btn-reset">Limpiar</button>
+            </div>
+
+        </form>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
